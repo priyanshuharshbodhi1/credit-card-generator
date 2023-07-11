@@ -23,12 +23,16 @@
 
 .form-container {
   width: 66.67%;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 20rem;
 }
 
 .form-row {
@@ -36,7 +40,9 @@ form {
 }
 
 label {
-  font-weight: bold;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  margin-bottom: .7rem;
 }
 
 input {
@@ -44,25 +50,45 @@ input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .form-column {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  margin-right: 10px;
+}
+
+.expiry-date {
+  display: flex;
+  gap: .6rem;
+
+}
+
+.line-three{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 0.7rem;
+  background-color: hsl(278, 68%, 11%);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  letter-spacing: 0.1rem;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: hsl(278, 74%, 21%);
 }
 
+.submit-button button{
+  width: 100%;
+}
