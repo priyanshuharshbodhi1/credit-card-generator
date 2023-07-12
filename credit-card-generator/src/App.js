@@ -1,13 +1,32 @@
 import React from "react";
 import "./App.css";
 import BgMainDesktop from "./images/bg-main-desktop.png";
+import CardLogo from "./images/card-logo.svg";
 
 export default function App() {
   return (
+    
     <div className="container">
+      
       <div className="image-container">
         <img src={BgMainDesktop} alt="" />
+        <div className="front-card">
+          <div className="front-card-internals">
+            <img src={CardLogo} alt="" />
+
+            <h2>1234 5678 9012 3456</h2>
+
+            <div className="last-column">
+              <div>JANE APPLESEED</div>
+              <div>00/OO</div>
+            </div>
+          </div>
+        </div>
+        <div className="back-card">
+          <div className="card-cvc">123</div>
+        </div>
       </div>
+      {/* <card /> */}
       <div className="form-container">
         <form>
           <div className="form-row">
