@@ -4,6 +4,7 @@ import BgMainDesktop from "./images/bg-main-desktop.png";
 import CardLogo from "./images/card-logo.svg";
 import Tick from "./images/icon-complete.svg";
 
+
 export default function App() {
   const [confirmed, setConfirmed] = useState(false);
   const [name, setName] = useState("JANE APPLESEED");
@@ -32,7 +33,7 @@ export default function App() {
           <div className="card-cvc">{cvc}</div>
         </div>
       </div>
-      {/* <card /> */}
+      <card />
       <div className="form-container">
         {!confirmed && (
           <form>
@@ -54,6 +55,7 @@ export default function App() {
                 id="card-number"
                 maxLength={19}
                 placeholder="1234 5678 9012 3456"
+                required
                 value={cardNumber}
                 onChange={(e) => setCardNumber(e.target.value)}
               />
@@ -68,6 +70,7 @@ export default function App() {
                     min={1}
                     max={12}
                     placeholder="MM"
+                    required
                     value={month}
                     onChange={(e) => setMonth(e.target.value)}
                   />
@@ -78,6 +81,7 @@ export default function App() {
                     max={32}
                     placeholder="YY"
                     value={year}
+                    required
                     onChange={(e) => setYear(e.target.value)}
                   />
                 </div>
@@ -88,6 +92,7 @@ export default function App() {
                   type="number"
                   id="cvc"
                   placeholder="e.g. 123"
+                  required
                   maxLength={3}
                   value={cvc}
                   onChange={(e) => setCvc(e.target.value)}
@@ -95,7 +100,7 @@ export default function App() {
               </div>
             </div>
             <div className="form-row submit-button">
-              <button type="submit" onClick={() => setConfirmed(true) }>Confirm</button>
+              <button type="submit" onClick={() => setConfirmed(true)}>Confirm</button>
             </div>
           </form>
         )}
@@ -113,6 +118,7 @@ const ThankYou = ({ setConfirmed }) => {
       <img src={Tick} alt="" />
       <h1>THANK YOU!</h1>
       <h5>We've added your card details</h5>
+      
       <div className="form-row submit-button thank-you-button">
         <button onClick={() => setConfirmed(false)}>Continue</button>
       </div>
