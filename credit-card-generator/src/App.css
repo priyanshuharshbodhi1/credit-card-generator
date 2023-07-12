@@ -146,7 +146,7 @@ input {
   gap: 1.2rem;
 }
 
-button[type="submit"] {
+button{
   padding: 0.7rem;
   background-color: hsl(278, 68%, 11%);
   color: white;
@@ -157,7 +157,7 @@ button[type="submit"] {
   letter-spacing: 0.1rem;
 }
 
-button[type="submit"]:hover {
+button:hover {
   background-color: hsl(278, 74%, 21%);
 }
 
@@ -172,7 +172,7 @@ button[type="submit"]:hover {
   gap: 1.3rem;
   flex-direction: column;
   align-items: stretch;
-  width: 22rem;
+  width: 21rem;
   height: auto;
 }
 
