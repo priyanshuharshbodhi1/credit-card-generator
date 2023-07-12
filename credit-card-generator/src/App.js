@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import BgMainDesktop from "./images/bg-main-desktop.png";
 import CardLogo from "./images/card-logo.svg";
+import Tick from "./images/icon-complete.svg";
 
 export default function App() {
   return (
@@ -83,7 +84,23 @@ export default function App() {
             <button type="submit">Confirm</button>
           </div>
         </form>
+        
       </div>
     </div>
   );
 }
+
+
+
+// const ThankYou = () => {
+//   return (
+//     <div className="thank-you-page"> 
+//       <img src={Tick} alt="" />
+//       <h1>THANK YOU!</h1>
+//       <h5>We've added your card details</h5>
+//       <div className="form-row submit-button thank-you-button">
+//         <button type="submit">Confirm</button>
+//       </div>
+//     </div>
+//   )
+// }

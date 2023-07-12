@@ -51,9 +51,10 @@
 }
 
 .front-card h2 {
-  font-weight: 250;
+  font-size: 1.5rem;
+  font-weight: 170;
   color: hsl(0, 0%, 100%);
-  letter-spacing: .12rem;
+  letter-spacing: .1rem;
   padding-top: 2rem;
   display: flex;
 }
@@ -93,6 +94,7 @@
 
 .form-container {
   width: 66.67%;
+  margin-left: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +104,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 20rem;
+  max-width: 22rem;
 }
 
 .form-row {
@@ -161,4 +163,40 @@ button[type="submit"]:hover {
 
 .submit-button button{
   width: 100%;
+}
+
+
+
+.thank-you-page {
+  display: flex;
+  gap: 1.3rem;
+  flex-direction: column;
+  align-items: stretch;
+  width: 22rem;
+  height: auto;
+}
+
+.thank-you-page img {
+  width: 5rem;
+  align-self: center;
+}
+
+.thank-you-page h1 {
+  letter-spacing: .3rem;
+  font-weight: 80;
+  font-size: 1.55rem;
+  color: rgb(41, 39, 39);
+  align-self: center;
+}
+
+.thank-you-page h5 {
+  color: rgb(136, 139, 141);
+  letter-spacing: .1rem;
+  align-self: center;
+  font-weight: 100;
+
+}
+
+.thank-you-page .submit-button {
+  margin-top: 2rem;
 }
